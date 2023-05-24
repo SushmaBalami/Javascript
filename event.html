@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <pre>Events
+        onclick,
+        ondblclick, onsubmit(form submit),
+        onchange(input value change), onload(page load),
+        onmouseover(hover over the element), onmouseout(opposite of onmouseover),
+        onkeyup(when a key press is released), onkeydown(when key press down),
+        onmousemove(when a mouse is moves over an elemrnt)
+    </pre>
+        <button onclick="demofunction()">Click to see the result</button>
+        <h2 id="result"></h2>
+        <button onmouseover="demo()" onmouseout="mydemo()">
+        click me to hover</button>
+        <h2 id="test"></h2>
+    <script>
+        function demofunction(){
+            document.getElementById('result').innerHTML=new Date()
+        }
+        function demo(){
+            document.getElementById('test').innerHTML="this is mouse hover"
+        }
+        function mydemo(){
+            document.getElementById('test').innerHTML=""
+        }
+    </script>
+</body>
+</html>

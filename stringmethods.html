@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    <script>
+        const text="welcome to home friends and go to your home."
+        document.write(`${text} <br>`)
+        // to count the length of a string use length
+        document.write(`${text.length}<br>`)
+
+        // to find the index position of specific string use indexOf()
+        document.write(`${text.indexOf('home')}<br>`)
+
+        // to find the last index position of repeated string use lastIndexOf()
+        document.write(`${text.lastIndexOf('home')}<br>`)
+
+        // to replace a string with another string use replace ie:replace(existing value, replacing value)
+        document.write(`${text.replace('friends','relatives')}<br>`)
+
+        // to replace all repeated string use replaceAll()
+        document.write(`${text.replaceAll('home','party')}<br>`)
+
+        // to uppercase the string
+        document.write(`${text.toUpperCase()}<br>`)
+
+        //to lowercase the string
+        document.write(`${text.toLowerCase()}<br>`)
+    </script>
+</body>
+</html>
